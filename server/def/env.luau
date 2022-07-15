@@ -139,6 +139,8 @@ type ENV = {
 		extract: (n: number, field: number, width: number?) -> number,
 		replace: (n: number, v: number, field: number, width: number?) -> number,
 		lrotate: (x: number, disp: number) -> number,
+		countlz: (x: number) -> number,
+		countrz: (x: number) -> number,
 	},
 	select: (index: string | number, ...any) -> any,
 	setmetatable: (table: table, metatable: table | nil) -> table,
